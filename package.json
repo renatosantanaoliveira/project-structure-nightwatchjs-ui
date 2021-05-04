@@ -1,0 +1,25 @@
+{
+  "name": "Testing nightwatchjs UI",
+  "version": "1.0.0",
+  "description": "Project structure nightwatchjs UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "mkdirp report && cucumber-js --require cucumber.conf.js --require steps --format node_modules/cucumber-pretty --format json:report/cucumber_report.json",
+    "report:clear": "rm -r report/ screenshots || true"
+  },
+  "keywords": [],
+  "author": "Renato Santana de Oliveira",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^87.0.5",
+    "cucumber": "^6.0.3",
+    "cucumber-html-reporter": "^5.0.2",
+    "cucumber-pretty": "^6.0.0",
+    "faker": "^4.1.0",
+    "mkdirp": "^0.5.1",
+    "nightwatch": "^1.2.4",
+    "nightwatch-api": "^3.0.1",
+    "aws-regions": "^2.2.0",
+    "aws-secrets-manager-actions": "^2.0.0"
+  }
+}
